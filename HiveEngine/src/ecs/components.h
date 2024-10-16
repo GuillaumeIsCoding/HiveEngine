@@ -5,7 +5,6 @@
 #ifndef COMPONENTS_H
 #define COMPONENTS_H
 #include "IComponent.h"
-#include <string>
 #include "core/uuid.h"
 
 namespace hive
