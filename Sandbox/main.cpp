@@ -7,10 +7,10 @@
 #include "core/window/WindowManager.h"
 #include "core/window/window_configuration.h"
 #include "core/window/window_factory.h"
-#include "scene/components.h"
-#include "scene/ECS.h"
-#include "scene/query_builder.h"
-#include "scene/system_manager.h"
+#include "ecs/Icomponent.h"
+#include "ecs/ECS.h"
+#include "ecs/query_builder.h"
+#include "ecs/system_manager.h"
 
 
 

@@ -1,17 +1,15 @@
 //
-// Created by GuillaumeIsCoding on 9/4/2024
+// Created by guill on 2024-10-16.
 //
-#pragma once
+
+#ifndef COMPONENTS_H
+#define COMPONENTS_H
+#include "IComponent.h"
 #include <string>
 #include "core/uuid.h"
 
 namespace hive
 {
-    struct IComponent {
-        virtual ~IComponent() = default;
-        virtual std::string toString() = 0;
-    };
-
     struct IDComponent : IComponent
     {
         UUID ID;
@@ -42,3 +40,5 @@ namespace hive
         }
     };
 }
+
+#endif //COMPONENTS_H
