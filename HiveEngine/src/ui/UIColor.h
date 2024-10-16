@@ -9,7 +9,8 @@
 #include <stdint.h>
 
 namespace hive {
-    struct UIColor : IComponent {
+    struct UIColor : IComponent
+    {
         uint8_t r, g, b, a;
 
         ~UIColor() override = default;

@@ -10,7 +10,8 @@
 
 namespace hive
 {
-    struct UINode : IComponent {
+    struct UINode : IComponent
+    {
         entt::entity parent = {entt::null};
         std::vector<entt::entity> children = {};
 
