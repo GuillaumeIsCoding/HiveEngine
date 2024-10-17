@@ -32,7 +32,7 @@ add_compile_definitions(BUILD_WITH_EASY_PROFILER)
 add_compile_definitions(HIVE_PLATFORM_GLFW)
 
 file(GLOB_RECURSE ECS_SOURCES src/ecs/*.cpp src/ecs/*.h)
-file(GLOB_RECURSE UI_SOURCES src/ui/*.cpp src/ui/*.h)
+file(GLOB_RECURSE UI_COMPONENTS_SOURCES src/ui/components/*.cpp src/ui/components/*.h)
 file(GLOB_RECURSE CORE_SOURCES src/core/*.cpp src/core/*.h)
 
 if (CMAKE_SYSTEM_NAME STREQUAL "Windows")
@@ -50,6 +50,6 @@ else()
     message(FATAL_ERROR "Unsupported platform: ${CMAKE_SYSTEM_NAME}")
 endif ()
 
-add_library(HiveEngine ${CORE_SOURCES} ${PLATFORM_SOURCES} ${RENDERING_SOURCES} ${VENDOR_SOURCES} ${WINDOW_BACKEND} ${ECS_SOURCES} ${UI_SOURCES})
+add_library(HiveEngine ${CORE_SOURCES} ${PLATFORM_SOURCES} ${RENDERING_SOURCES} ${VENDOR_SOURCES} ${WINDOW_BACKEND} ${ECS_SOURCES} ${UI_COMPONENTS_SOURCES})
 target_link_libraries(HiveEngine glfw glad EnTT glm stb_image easy_profiler)
 target_precompile_headers(HiveEngine PRIVATE ${PCH_HEADER})
