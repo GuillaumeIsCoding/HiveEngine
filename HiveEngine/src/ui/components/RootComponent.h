@@ -10,11 +10,11 @@ namespace hive
 {
     namespace ui
     {
-        struct HiveRoot : hive::UINode
+        struct RootComponent : hive::UINode
         {
-            ~HiveRoot() override = default;
+            ~RootComponent() override = default;
 
-            HiveRoot() : HiveNode(entt::null) {}
+            RootComponent() : HiveNode(entt::null) {}
 
             std::string toString() override {
                 return "UIRoot";

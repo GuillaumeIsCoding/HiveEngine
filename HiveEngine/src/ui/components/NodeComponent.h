@@ -13,20 +13,19 @@ namespace hive
 {
     namespace ui
     {
-        struct HiveNode : hive::IComponent
+        struct NodeComponent : hive::IComponent
         {
             entt::entity parent = {entt::null};
             std::vector<entt::entity> children = {};
 
-            ~HiveNode() override = default;
+            ~NodeComponent() override = default;
 
-            HiveNode(const entt::entity& parent) : parent(parent) {};
+            NodeComponent(const entt::entity& parent) : parent(parent) {};
 
             std::string toString() override {
                 return "UINode";
             };
         };
     }
-
 }
 #endif //UINODE_H

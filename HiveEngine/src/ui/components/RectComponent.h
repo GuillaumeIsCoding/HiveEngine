@@ -10,13 +10,13 @@ namespace hive
 {
     namespace ui
     {
-        struct HiveRect : hive::IComponent
+        struct RectComponent : hive::IComponent
         {
             int x, y, width, height;
 
-            ~HiveRect() override = default;
+            ~RectComponent() override = default;
 
-            HiveRect(const int& x, const int& y,
+            RectComponent(const int& x, const int& y,
                    const int& width, const int& height)
             : x(x), y(y), width(width), height(height) {}
 

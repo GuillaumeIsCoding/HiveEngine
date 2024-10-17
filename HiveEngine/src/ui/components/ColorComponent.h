@@ -11,13 +11,13 @@
 namespace hive
 {
     namespace ui {
-        struct HiveColor : hive::IComponent
+        struct ColorComponent : hive::IComponent
         {
             uint8_t r, g, b, a;
 
-            ~HiveColor() override = default;
+            ~ColorComponent() override = default;
 
-            HiveColor(const uint8_t& red, const uint8_t& green,
+            ColorComponent(const uint8_t& red, const uint8_t& green,
                     const uint8_t& blue, const uint8_t& alpha)
             : r(red), g(green), b(blue), a(alpha) {}
 

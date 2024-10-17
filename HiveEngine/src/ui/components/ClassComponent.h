@@ -11,19 +11,18 @@ namespace hive
 {
     namespace ui
     {
-        struct HiveClass : hive::IComponent
+        struct ClassComponent : hive::IComponent
         {
             std::string value;
 
-            ~HiveClass() override = default;
+            ~ClassComponent() override = default;
 
-            HiveClass(const std::string& value = std::string()) : value(value) {}
+            ClassComponent(const std::string& value = std::string()) : value(value) {}
 
             std::string toString() override {
                 return "UIClass : " + value;
             }
         };
     }
-
 }
 #endif //UICLASS_H

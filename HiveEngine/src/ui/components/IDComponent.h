@@ -12,22 +12,20 @@ namespace hive
 {
     namespace ui
     {
-        struct HiveID : hive::IComponent
+        struct IDComponent : hive::IComponent
         {
             std::string value;
             entt::entity element = {entt::null};
 
-            ~HiveID() override = default;
+            ~IDComponent() override = default;
 
-            HiveID(const std::string& value, entt::entity element) : value(value), element(element) {}
+            IDComponent(const std::string& value, entt::entity element) : value(value), element(element) {}
 
             std::string toString() override {
                 return "HiveID : " + value;
             }
         };
     }
-
-
 }
 
 #endif //HIVEID_H
