@@ -15,9 +15,11 @@ namespace hive
         {
             std::string value;
 
-            ~ClassComponent() override = default;
-
+            ClassComponent() = default;
+            ClassComponent(const ClassComponent&) = default;
             ClassComponent(const std::string& value = std::string()) : value(value) {}
+
+            ~ClassComponent() override = default;
 
             std::string toString() override {
                 return "UIClass : " + value;

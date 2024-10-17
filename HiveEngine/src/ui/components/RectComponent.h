@@ -14,11 +14,13 @@ namespace hive
         {
             int x, y, width, height;
 
-            ~RectComponent() override = default;
-
+            RectComponent() = default;
+            RectComponent(const RectComponent&) = default;
             RectComponent(const int& x, const int& y,
                    const int& width, const int& height)
             : x(x), y(y), width(width), height(height) {}
+
+            ~RectComponent() override = default;
 
             std::string toString() override {
                 return "UIRect : " + std::to_string(x) + " " + std::to_string(y) +

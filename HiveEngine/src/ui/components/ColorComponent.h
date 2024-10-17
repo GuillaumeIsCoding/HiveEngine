@@ -15,11 +15,13 @@ namespace hive
         {
             uint8_t r, g, b, a;
 
-            ~ColorComponent() override = default;
-
+            ColorComponent() = default;
+            ColorComponent(const ColorComponent&) = default;
             ColorComponent(const uint8_t& red, const uint8_t& green,
                     const uint8_t& blue, const uint8_t& alpha)
             : r(red), g(green), b(blue), a(alpha) {}
+
+            ~ColorComponent() override = default;
 
             std::string toString() override {
                 return "UIColor : " + std::to_string(r) + " " + std::to_string(g)

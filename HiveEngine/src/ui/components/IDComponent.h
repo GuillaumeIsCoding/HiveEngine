@@ -17,9 +17,9 @@ namespace hive
             std::string value;
             entt::entity element = {entt::null};
 
-            ~IDComponent() override = default;
-
             IDComponent(const std::string& value, entt::entity element) : value(value), element(element) {}
+
+            ~IDComponent() override = default;
 
             std::string toString() override {
                 return "HiveID : " + value;
