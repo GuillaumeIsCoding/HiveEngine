@@ -4,7 +4,7 @@
 #ifndef UIRECT_H
 #define UIRECT_H
 
-#include <../../ecs/Icomponent.h>
+#include <ecs/IComponent.h>
 
 namespace hive
 {

@@ -7,7 +7,7 @@
 #include "core/window/WindowManager.h"
 #include "core/window/window_configuration.h"
 #include "core/window/window_factory.h"
-#include "ecs/Icomponent.h"
+#include "ecs/IComponent.h"
 #include "ecs/ECS.h"
 #include "ecs/query_builder.h"
 #include "ecs/system_manager.h"

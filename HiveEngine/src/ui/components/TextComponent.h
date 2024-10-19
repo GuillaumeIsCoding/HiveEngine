@@ -11,10 +11,10 @@ namespace hive
 {
     namespace ui
     {
-        struct TextComponent : public IComponent
+        struct TextComponent :IComponent
         {
             std::string textContent;
-
+            int x,y, fontSize;
 
             TextComponent() = default;
             TextComponent(const TextComponent&) = default;

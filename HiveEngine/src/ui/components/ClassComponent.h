@@ -5,7 +5,7 @@
 #ifndef UICLASS_H
 #define UICLASS_H
 
-#include <ecs/Icomponent.h>
+#include <ecs/IComponent.h>
 
 namespace hive
 {
@@ -15,7 +15,6 @@ namespace hive
         {
             std::string value;
 
-            ClassComponent() = default;
             ClassComponent(const ClassComponent&) = default;
             ClassComponent(const std::string& value = std::string()) : value(value) {}
 

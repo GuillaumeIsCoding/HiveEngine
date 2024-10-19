@@ -7,7 +7,7 @@
 
 #include <../../../dep/entt/src/entt/entity/entity.hpp>
 #include <vector>
-#include <../../ecs/Icomponent.h>
+#include <ecs/IComponent.h>
 
 namespace hive
 {

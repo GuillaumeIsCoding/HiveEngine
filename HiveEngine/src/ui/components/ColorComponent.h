@@ -5,7 +5,7 @@
 #ifndef UICOLOR_H
 #define UICOLOR_H
 
-#include <../../ecs/Icomponent.h>
+#include <ecs/IComponent.h>
 #include <stdint.h>
 
 namespace hive
@@ -15,7 +15,6 @@ namespace hive
         {
             uint8_t r, g, b, a;
 
-            ColorComponent() = default;
             ColorComponent(const ColorComponent&) = default;
             ColorComponent(const uint8_t& red, const uint8_t& green,
                     const uint8_t& blue, const uint8_t& alpha)

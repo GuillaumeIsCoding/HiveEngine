@@ -4,9 +4,9 @@
 
 #include <gtest/gtest.h>
 
-#include "scene/ECS.h"
-#include "scene/query_builder.h"
-#include "scene/Registry.h"
+#include "ecs/ECS.h"
+#include "ecs/query_builder.h"
+#include "ecs/Registry.h"
 
 class ECSTest : public ::testing::Test
 {

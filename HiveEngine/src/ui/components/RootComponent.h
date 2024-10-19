@@ -4,16 +4,16 @@
 #ifndef UIROOT_H
 #define UIROOT_H
 
-#include "UINode.h"
+#include "NodeComponent.h"
 
 namespace hive
 {
     namespace ui
     {
-        struct RootComponent : hive::UINode
+        struct RootComponent : NodeComponent
         {
 
-            RootComponent() : HiveNode(entt::null) {}
+            RootComponent() : NodeComponent({}) {}
 
             ~RootComponent() override = default;
 
