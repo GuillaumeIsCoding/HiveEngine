@@ -2,7 +2,6 @@
 //
 //
 #pragma once
-#include <string>
 #include "ecs/Icomponent.h"
 
 namespace hive 
@@ -13,9 +12,9 @@ namespace hive
         {
             int x, y;
 
-            ~UIComponent() override = default;
+            virtual ~UIComponent() = default;
 
-            std::string toString() override;
+            virtual std::string toString() = 0;
         }
     }
 }

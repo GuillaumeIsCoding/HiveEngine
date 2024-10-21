@@ -2,18 +2,18 @@
 //
 //
 #pragma once
-#include <string>
 #include "ecs/Icomponent.h"
 
 namespace hive 
 {
     namespace ui 
     {
-        struct PropertiesComponent : hive::IComponent 
+        struct PropetiesComponent : hive::IComponent 
         {
-            bool clickable = false;
+            bool isClickable = false;
+            bool isDragable  = false;
 
-            ~PropertiesComponent() override = default;
+            ~PropetiesComponent() override = default;
 
             std::string toString() override;
         }
